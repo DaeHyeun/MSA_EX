@@ -1,0 +1,61 @@
+html, body {
+    height: 100%; /* 부모 요소에 전체 높이 설정 */
+    margin: 0; /* 기본 마진 제거 */
+}
+
+body {
+    display: flex; /* flexbox 레이아웃 사용 */
+    flex-direction: column; /* 수직으로 배치 */
+}
+
+header {
+    background-color: lightblue;
+    height: 100px; /* 예시로 높이를 100px로 설정 */
+}
+
+main {
+    height: calc(100vh - 200px); /* 전체 화면 높이에서 header와 footer의 높이를 뺀 값 */
+}
+
+footer {
+    background-color: lightblue;
+    height: 100px; /* 예시로 높이를 100px로 설정 */
+}
+
+h1 {
+    text-align: center;
+}
+
+#content {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#content input {
+    width: 60%; /* 가로 크기 60% */
+    height: 30px; /* 세로 크기 30px */
+    font-size: 16px; /* 글자 크기 설정 */
+    line-height: 30px; /* 세로 정렬 (input 높이와 동일하게 맞추기) */
+    padding: 0 10px; /* 왼쪽과 오른쪽 여백을 추가하여 글자가 너무 가장자리에 붙지 않게 */
+    margin-right: 20px;
+}
+
+#content button{
+    width: 10%;
+    height: 30px;
+}
+
+.result {
+    width: 90%;
+    height: 300px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid black;
+    padding: 15px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow-y: auto; /* 내용이 넘칠 경우 세로 스크롤바 생기도록 설정 */
+}
+
